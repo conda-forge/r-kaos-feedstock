@@ -1,4 +1,4 @@
-{% set version = '0.1.1' %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kaos_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kaos/kaos_{{ version }}.tar.gz
-  sha256: 98090a008de946374627c70748ea0b1b78ec7b803b9361fc837c32f254ffd721
+  sha256: 13f1de43e4b0616cae534f215b1b23b80cb425c2e99440d9788436df285aff43
 
 build:
   merge_build_host: True  # [win]
